@@ -2,27 +2,27 @@
 
 <head>
   <title>Maison d'hôte</title>
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"/>
   <!--Import mycss.css-->
   <link type="text/css" rel="stylesheet" href="css/mycss.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/myjs.js"></script>
 </head>
 
 <body class="container">
 
   <header id="monancre">
-    <nav>
+    <nav role="navigation">
       <div class="titleResponsive green">
         <a class="title center"> Inscrivez-vous !</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
           <li>
             <a href="Test_maison_d_hote.html">Accueil</a>
           </li>
@@ -30,6 +30,16 @@
             <a href="Test_maison_d_hote_region.html">Découvrez la ville de Nantes</a>
           </li>
         </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li>
+            <a href="Test_maison_d_hote.html">Accueil</a>
+          </li>
+          <li>
+            <a href="Test_maison_d_hote_region.html">Découvrez la ville de Nantes</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </header>
@@ -166,6 +176,7 @@
           <label>Région d'origine</label>
         </div>
       </div>
+      </br>
       <button class="btn waves-effect waves-light" type="submit" name="action">Soumettre
         <i class="material-icons right">send</i>
       </button>

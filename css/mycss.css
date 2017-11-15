@@ -107,7 +107,8 @@ height: 50%;
               transform: translateX(-50%);
   }
 
-  .centervertical2
+  .titleResponsive
   {
-    justify-content: center;
+    min-height: 56px;
+    height: 100px;
   }
